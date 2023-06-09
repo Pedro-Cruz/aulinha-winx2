@@ -5,7 +5,7 @@
   <script src="fetchDados.js"></script>
 </head>
 <body>
-  <h1>Pesquisa de Carros</h1>
+  <h1>Pesquisa de Placas</h1>
 
   <form id="pesquisa">
     <label for="placa">Digite a Placa:</label>

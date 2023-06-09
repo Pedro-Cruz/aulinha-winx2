@@ -5,6 +5,8 @@ function fetchDados(placa) {
   .then(response => {
     if (!response.ok) {
       throw new Error('Erro na requisição: ' + response.status);
+    }else{
+      console.log('OK');
     }
     return response.json();
   })
@@ -37,8 +39,6 @@ function fetchDados(placa) {
         resultado.innerHTML = 'Nenhum resultado encontrado.';
       }
     })
-    .catch(error => {
-      console.error('Ocorreu um erro:', error);
-    });
+    .catch(() =>{alert('Erro na consulta.')});
 }
 
